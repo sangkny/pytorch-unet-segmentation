@@ -1,3 +1,9 @@
+# this repository has been modified by sangkny, the main repository and its contents came from the following site.
+```angular2html
+updates:
+tested on pyTorch 1.2
+
+```
 # pytorch-unet-segmentation
 
 **Members** : <a href="https://github.com/PyeongKim">PyeongEun Kim</a>, <a href="https://github.com/juhlee">JuHyung Lee</a>, <a href="https://github.com/mijeongl"> MiJeong Lee </a>

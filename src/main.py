@@ -24,14 +24,14 @@ if __name__ == "__main__":
     # Dataloader begins
     SEM_train_load = \
         torch.utils.data.DataLoader(dataset=SEM_train,
-                                    num_workers=16, batch_size=2, shuffle=True)
+                                    num_workers=1, batch_size=1, shuffle=True)
     SEM_val_load = \
         torch.utils.data.DataLoader(dataset=SEM_val,
-                                    num_workers=3, batch_size=1, shuffle=True)
+                                    num_workers=1, batch_size=1, shuffle=True)
 
     SEM_test_load = \
         torch.utils.data.DataLoader(dataset=SEM_test,
-                                    num_workers=3, batch_size=1, shuffle=False)
+                                    num_workers=1, batch_size=1, shuffle=False)
 
     # Dataloader end
 

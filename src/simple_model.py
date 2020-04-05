@@ -214,7 +214,17 @@ if __name__ == "__main__":
     im = torch.randn(1, 1, 572, 572)
     model = CleanU_Net()
     x = model(im)
-    # print(x.shape)
+    print(im.shape, x.shape)
+    criterion = nn.CrossEntropyLoss()
+
+    img = Variable(im.cuda())
+    mask = Variable(x.cuda())
+
+
+    loss = criterion(img,mask)
+
+    #print(model)
+    #print(x.shape)
     del model
     del x
     # print(x.shape)
